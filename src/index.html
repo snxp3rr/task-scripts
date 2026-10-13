@@ -3,5 +3,19 @@
     <head>
         <title>Scripts</title>
     </head>
-    <body></body>
+    <body>
+        <!-- 1. Встроенный скрипт -->
+        <script>
+            document.body.append('inline');
+        </script>
+
+        <!-- 2. Внешний синхронный скрипт -->
+        <script src="scripts/sync.js"></script>
+
+        <!-- 3. Внешний скрипт с атрибутом async -->
+        <script src="scripts/async.js" async></script>
+
+        <!-- 4. Внешний скрипт с атрибутом defer -->
+        <script src="scripts/defer.js" defer></script>
+    </body>
 </html>
